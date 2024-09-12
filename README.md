@@ -1,4 +1,5 @@
 # vue-starting
+- Vue의 기본 문법을 알아가는 프로젝트
 
 ## Project setup
 ```
