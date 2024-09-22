@@ -1,10 +1,15 @@
 <template>
   <Navbar />
   <Event :text="text" />
-  <Movies 
-  :data="data"
-  @openModal="isModal=true; selectedMovie = $event"
-  @increaseLike="increaseLike($event)" />
+  <SearchBar />
+  <Movies
+    :data="data"
+    @openModal="
+      isModal = true;
+      selectedMovie = $event;
+    "
+    @increaseLike="increaseLike($event)"
+  />
 
   <Modal
     :data="data"
@@ -19,7 +24,8 @@ import data from './assets/movies';
 import Navbar from './components/Navbar.vue';
 import Modal from './components/Modal.vue';
 import Event from './components/Event.vue';
-import Movies from './components/Movies.vue'
+import Movies from './components/Movies.vue';
+import SearchBar from './components/SearchBar.vue';
 
 export default {
   name: 'App',
@@ -41,6 +47,7 @@ export default {
     Modal: Modal,
     Event: Event,
     Movies: Movies,
+    SearchBar: SearchBar,
   },
 };
 </script>
