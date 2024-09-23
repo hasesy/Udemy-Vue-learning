@@ -2,7 +2,9 @@
   <div class="search-box">
     <input
       type="search"
-      @change="inputText = $event.target.value;
+      @change="
+      $emit('searchMovie', $event.target.value)
+      inputText = $event.target.value;
       $event.target.value = ''
       "
       placeholder="검색어 입력"
