@@ -16,6 +16,7 @@ export default {
     isModal: Boolean,
     selectedMovie: Number,
   },
+  emits: ['closeModal'],
 };
 </script>
 

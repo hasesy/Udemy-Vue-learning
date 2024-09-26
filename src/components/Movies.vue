@@ -26,8 +26,8 @@ export default {
     name: 'MoviesComponent',
     props: {
         data: Array,
-
-    }
+    },
+    emits: ['increaseLike', 'openModal'],
 }
 </script>
 

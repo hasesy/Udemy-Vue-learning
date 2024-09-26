@@ -25,6 +25,7 @@ export default {
   props: {
     data: Array,
   },
+  emits: ['searchMovie'],
   watch: {
     inputText(name) {
       // 입력한 영화제목이 데이터에 있는지 확인
